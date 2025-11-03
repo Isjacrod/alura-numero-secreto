@@ -12,6 +12,7 @@ function configuraVoz() {
     return sintese; 
 }
 
+
 //Função que coloca texto em elementos
 function defineTexto(tag, texto) {
     let elemento = document.querySelector(tag);
