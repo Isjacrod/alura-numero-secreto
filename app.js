@@ -2,6 +2,7 @@
 let listaDeNumeros = [];
 let numeroSecreto;
 let tentativas;
+let numeroMaximo = 100;
 let voz = configuraVoz()
 
 // Define a voz
@@ -70,12 +71,12 @@ function geraNumeroAleatorio(a, b) {
 }
 
 // Inicia um novo jogo
-function novoJogo() {
+function novoJogo(numeroMaximo) {
     cenaInicial()
     limparCampo();
     document.getElementById("reiniciar").disabled = true;
     tentativas = 1;
-    numeroSecreto = geraNumeroAleatorio(1,10);  
+    numeroSecreto = geraNumeroAleatorio(1,numeroMaximo);  
 }
 
 // Escedeu possibilidades
@@ -84,4 +85,4 @@ function fimDoJogo() {
 }
 
 // Inicio
-novoJogo()
+novoJogo(numeroMaximo)
