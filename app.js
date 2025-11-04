@@ -84,5 +84,5 @@ function fimDoJogo() {
     defineTexto("h1", "Fim das posibilidades");
 }
 
-// Inicio
+// Inicio do jogo
 novoJogo()
