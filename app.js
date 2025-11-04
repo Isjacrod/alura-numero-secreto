@@ -1,4 +1,5 @@
 //Variáveis de controle
+let numeroMaximo = 10;
 let listaDeNumeros = [];
 let numeroSecreto;
 let tentativas;
@@ -23,7 +24,7 @@ function defineTexto(tag, texto) {
 // Apresentação inicial
 function cenaInicial() {
     //Define os textos
-    defineTexto("p", "Escolha um número entre 1 e 10");
+    defineTexto('p', `Escolha um número entre 1 e ${numeroMaximo}`);
     defineTexto("h1", "Bora Jogar");
 }
 
