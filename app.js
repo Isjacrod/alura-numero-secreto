@@ -1,8 +1,8 @@
 //Variáveis de controle
+let numeroMaximo = 10;
 let listaDeNumeros = [];
 let numeroSecreto;
 let tentativas;
-let numeroMaximo = 100;
 let voz = configuraVoz()
 
 // Define a voz
