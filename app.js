@@ -22,9 +22,9 @@ function defineTexto(tag, texto) {
 }
 
 // Apresentação inicial
-function cenaInicial() {
+function cenaInicial(numeroMaximo) {
     //Define os textos
-    defineTexto("p", "Escolha um número entre 1 e 10");
+    defineTexto("p", `Escolha um número entre 1 e ${numeroMaximo}`);
     defineTexto("h1", "Bora Jogar");
 }
 
@@ -72,7 +72,7 @@ function geraNumeroAleatorio(a, b) {
 
 // Inicia um novo jogo
 function novoJogo(numeroMaximo) {
-    cenaInicial()
+    cenaInicial(numeroMaximo)
     limparCampo();
     document.getElementById("reiniciar").disabled = true;
     tentativas = 1;
