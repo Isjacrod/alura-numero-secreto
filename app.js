@@ -71,7 +71,7 @@ function geraNumeroAleatorio(a, b) {
 }
 
 // Inicia um novo jogo
-function novoJogo(numeroMaximo) {
+function novoJogo() {
     cenaInicial(numeroMaximo)
     limparCampo();
     document.getElementById("reiniciar").disabled = true;
@@ -85,4 +85,4 @@ function fimDoJogo() {
 }
 
 // Inicio
-novoJogo(numeroMaximo)
+novoJogo()
